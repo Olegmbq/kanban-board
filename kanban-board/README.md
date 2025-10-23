@@ -1,135 +1,85 @@
-# 🧩 **Awesome Kanban Board**
-
-### _Crafted by Oleg & Neuro Code Studio_ ⚙️💙
-
 <p align="center">
-  <img src="./brand/cover.png" alt="Awesome Kanban Board – Oleg & Neuro Code Studio" width="100%">
+  <img src="./brand/cover.png" alt="Awesome Kanban Board — Oleg & Neuro Code Studio" width="100%">
 </p>
 
----
+# 🧭 Awesome Kanban Board
 
-## 📖 Описание проекта
-
-**Awesome Kanban Board** — это минималистичная, но мощная web-доска для управления задачами в стиле **Kanban**.  
-Создана с вниманием к чистоте кода и стабильности работы, на **React 19** и **React Router v7**.  
-Все данные сохраняются в `localStorage`, чтобы даже после перезагрузки сессия не терялась.
+Современное React-приложение для управления задачами, созданное студией  
+✨ **Oleg & Neuro Code Studio** — где логика, дизайн и эмоция объединяются в гармонию.
 
 ---
 
 ## 🌐 Live Demo
 
-🎯 **Онлайн-версия проекта доступна здесь:**  
-👉 [**Awesome Kanban Board — Live Demo**](https://kanban-board-oleg-neuro.vercel.app)
+🔗 **[Открыть онлайн-версию — Awesome Kanban Board](https://olegmbq.github.io/kanban-board/)**
 
-_(Если ссылка не активна — значит проект пока в локальной среде.  
-Позже можно будет развернуть на [Vercel](https://vercel.com/) или [Netlify](https://www.netlify.com/).)_
-
----
-
-## 🚀 Основные возможности
-
-- 📝 Добавление новых карточек в **Backlog**
-- 🔄 Пошаговое перемещение задач между этапами
-- 💾 Автосохранение данных в браузере
-- 🔁 Кнопка **Reset Board** — возвращает всё к исходному состоянию
-- 📊 Счётчики активных и завершённых задач
-- 🌐 Переход на страницу отдельной задачи
+Приложение доступно в браузере без установки.  
+Попробуй добавить задачу, переместить её между колонками, а затем перезапусти страницу — данные сохраняются автоматически!
 
 ---
 
----
+## 💡 About the Project
 
-## ⚙️ How it works
+**Awesome Kanban Board** — это интуитивная доска задач с минималистичным интерфейсом.  
+Создана для демонстрации современных возможностей React и локального хранения данных.
 
-Каждая задача проходит четыре стадии жизненного цикла:
+### ⚙️ Основные функции
 
-🧩 **Backlog** — сюда добавляются все новые идеи и задачи.  
-⚙️ **Ready** — здесь находятся задачи, которые готовы к выполнению.  
-🔧 **In Progress** — активные задачи, над которыми идёт работа.  
-✅ **Finished** — завершённые и проверенные задачи.
+- Добавление новых задач в колонку **Backlog**
+- Перемещение задач между стадиями: _Ready → In Progress → Finished_
+- Подсчёт активных и завершённых задач
+- Сохранение состояния в `localStorage`
+- Кнопка **Reset Board** для сброса данных
 
-Каждая карточка плавно “путешествует” по колонкам,  
-а количество активных и завершённых задач отображается внизу доски.
+### 🧠 Технологии
 
-<p align="center">
-  <img src="./screenshots/flow-diagram.png" alt="Kanban flow" width="80%">
-</p>
-
----
-
-## 📸 Скриншоты
-
-<p align="center">
-  <img src="./screenshots/board.png" alt="Kanban Board view" width="90%"><br><br>
-  <img src="./screenshots/task.png" alt="Task Page view" width="90%">
-</p>
+- ⚛️ **React 19**
+- 🧭 **React Router DOM 7**
+- 🏗️ **Create React App**
+- 💾 **LocalStorage API**
+- 🎨 Чистая, адаптивная верстка без лишних зависимостей
 
 ---
 
-## ⚙️ Запуск проекта
-
-```bash
-npm install
-npm start
-```
-
----
-
-## 🧠 Tech Stack & Architecture
-
-Проект **Awesome Kanban Board** создан с использованием современного стека фронтенд-разработки:
-
-- ⚛️ **React 19** — компонентный подход и реактивное управление состоянием.
-- 🧭 **React Router DOM 7** — маршрутизация страниц (доска / страница задачи).
-- 💾 **LocalStorage API** — сохранение состояния между сессиями.
-- 🎨 **CSS-модули** и инлайн-стили — лёгкая стилизация без сторонних библиотек.
-- 🚀 **Create React App** — надёжная сборка, запуск и деплой проекта.
-
----
-
-### 📂 Архитектура проекта
+## 🗂️ Project Structure
 
 kanban-board/
-│
-├── public/ # HTML-шаблон, favicon и манифест
-├── src/
-│ ├── components/
-│ │ ├── Board/ # Основная доска с колонками
-│ │ ├── Column/ # Отдельная колонка Kanban
-│ │ └── Task/ # Компонент карточки задачи (опционально)
-│ │
-│ ├── pages/
-│ │ └── TaskPage/ # Страница конкретной задачи
-│ │
-│ ├── data/
-│ │ └── dataMock.js # Исходные данные по умолчанию
-│ │
-│ ├── App.js # Главный компонент маршрутизации
-│ ├── index.js # Точка входа React
-│ └── index.css # Базовые стили
-│
-├── brand/ # Обложка и фирменные ресурсы студии
-├── screenshots/ # Скриншоты и схема flow-диаграммы
-├── README.md # Описание проекта
-└── package.json # Зависимости и команды npm
+├── 📁 public/ # Базовые HTML и favicon
+├── 📁 src/ # Исходный код приложения
+│ ├── 📁 components/ # Компоненты интерфейса
+│ │ ├── Board/ # Главная доска Kanban
+│ │ └── Column/ # Колонка задач
+│ ├── 📁 data/ # Мок-данные (dataMock.js)
+│ ├── 📁 pages/ # Страницы (TaskPage)
+│ ├── App.js # Маршрутизация и структура
+│ ├── index.js # Точка входа, HashRouter
+│ └── styles.css # Основные стили
+├── 📁 brand/ # Бренд-обложка проекта
+├── 📁 screenshots/ # Скриншоты и визуалы
+├── .gitignore # Исключённые файлы
+├── package.json # Зависимости и скрипты npm
+└── README.md # Документация проекта
 
 ---
 
-### 🧩 Особенности
+## 🧷 Badges
 
-- Подсчёт активных и завершённых задач.
-- Кнопка **Reset board** для очистки данных.
-- Плавная анимация карточек при добавлении и переносе.
-- Сохранение состояния между перезагрузками.
-- Авторский дизайн в стиле **Oleg & Neuro Code Studio** 🌌
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-Active-brightgreen)
+![Deploy](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue?logo=github)
 
 ---
 
-### 💡 Авторство
+## 🎨 Crafted with care by Oleg & Neuro Code Studio
 
-Создано с любовью и вниманием к деталям:  
-**Oleg & Neuro Code Studio** — crafted in neon & harmony ✨
+> “Built in neon & harmony.” ✨  
+> Разработано с любовью, логикой и вниманием к деталям.
 
-🌌 Brand Footer
+📦 **Repository:** [https://github.com/Olegmbq/kanban-board](https://github.com/Olegmbq/kanban-board)  
+🌐 **Live Demo:** [https://olegmbq.github.io/kanban-board/](https://olegmbq.github.io/kanban-board/)
 
-<p align="center"> <strong>Oleg & Neuro Code Studio</strong><br> <em>crafted in neon & harmony ⚙️💙</em><br> <a href="https://github.com/Olegmbq" target="_blank">github.com/Olegmbq</a> </p>
+---
+
+© 2025 **Oleg & Neuro Code Studio**  
+_Your imagination. Our code. One harmony._
