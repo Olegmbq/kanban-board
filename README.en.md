@@ -114,12 +114,17 @@ npm start
 
 ---
 
-🌐 Deployment
+## 🌐 Онлайн-демо
 
-This app is deployed via GitHub Pages
-and available online at:
+🔗 **[Открыть Kanban Board на Vercel](https://kanban-board-rosy-ten.vercel.app)**
 
-🔗 https://olegmbq.github.io/kanban-board/
+Попробуй добавлять задачи, перемещать их между колонками и обновлять страницу —  
+все данные сохраняются автоматически благодаря `localStorage`.
+
+Приложение развёрнуто через GitHub Pages
+и доступно по адресу:
+
+🔗 **[Открыть Kanban Board на GitHub](https://olegmbq.github.io/kanban-board/)**
 
 ---
 
