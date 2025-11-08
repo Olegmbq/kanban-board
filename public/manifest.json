@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Kanban",
+  "name": "Awesome Kanban Board — Oleg & Neuro Code Studio",
+  "description": "A modern React-based Kanban task board crafted in neon harmony by Oleg & Neuro Code Studio.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "background_color": "#0d0d0d",
+  "theme_color": "#7f00ff",
+  "scope": ".",
+  "id": "/",
+  "lang": "en"
 }

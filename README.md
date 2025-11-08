@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="./brand/cover.png" alt="Awesome Kanban Board — Oleg & Neuro Code Studio" width="100%">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <i>Современная Kanban-доска, созданная в студии <b>Oleg & Neuro Code Studio</b><br>
+  Логика, дизайн и эмоции — в неоновой гармонии.</i>
+</p>
 
-## Available Scripts
+<h1 align="center">🧭 Awesome Kanban Board</h1>
 
-In the project directory, you can run:
+<p align="center">
+  Современная Kanban-доска на React, созданная студией  
+  <b>✨ Oleg & Neuro Code Studio</b> — там, где логика, дизайн и эмоции живут в гармонии.
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.0-blue?logo=react&logoColor=white" alt="React Badge"/></a>
+  <a href="https://create-react-app.dev/"><img src="https://img.shields.io/badge/Create%20React%20App-5.0.1-09D3AC?logo=react" alt="CRA Badge"/></a>
+  <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-181717?logo=github" alt="GitHub Pages Badge"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License Badge"/></a>
+  <a href="https://github.com/Olegmbq/kanban-board/releases"><img src="https://img.shields.io/badge/Version-1.0.0-orange" alt="Version Badge"/></a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  🇷🇺 Русская версия | <a href="./README.en.md">🌍 English version</a>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img src="./brand/logo_neon_holo.png" width="300" alt="Oleg & Neuro Code Studio Logo" />
+</p>
 
-### `npm test`
+<h2 align="center">💎 The Official Identity of <b>Oleg & Neuro Code Studio</b></h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <em>Crafted in neon & harmony — a fusion of logic, art, and emotion.</em><br>
+  <sub>💫 We don’t just design — we illuminate.</sub><br>
+  <sub>🧠 Built with passion by <b>Oleg & Neuro Code Studio</b></sub>
+</p>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Онлайн-демо
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔗 **[Открыть Kanban Board в браузере](https://olegmbq.github.io/kanban-board/)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Попробуй добавлять задачи, перемещать их между колонками и перезагружать страницу —  
+все данные сохраняются автоматически с помощью `localStorage`.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💡 О проекте
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Awesome Kanban Board** — это лёгкое интерактивное приложение  
+для управления задачами с сохранением состояния прямо в браузере.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Проект демонстрирует архитектуру React, чистую структуру компонентов  
+и логику передачи данных между ними без сторонних библиотек.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Технологии
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚛️ <b>React 19</b> — современный JavaScript-фреймворк  
+🧭 <b>React Router DOM 7</b> — маршрутизация и навигация  
+🏗️ <b>Create React App</b> — базовая среда разработки и сборка  
+💾 <b>LocalStorage API</b> — хранение данных в браузере  
+🎨 <b>CSS-модули / inline-стили</b> — оформление интерфейса  
+🧠 <b>JavaScript (ES6+)</b> — логика компонентов и состояние  
+🌐 <b>GitHub Pages</b> — деплой и хостинг  
+🧩 <b>Node.js + npm</b> — зависимости и сборка
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🗂️ Структура проекта
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📁 <b>kanban-board/</b>
+├── 📁 <b>public/</b> — Базовые HTML-файлы и favicon  
+├── 📁 <b>src/</b> — Исходный код приложения  
+│ ├── 📁 <b>components/</b> — Компоненты интерфейса  
+│ │ ├── 📁 <b>Board/</b> — Главная Kanban-доска  
+│ │ └── 📁 <b>Column/</b> — Колонка задач  
+│ ├── 📁 <b>data/</b> — Мок-данные (dataMock.js)  
+│ ├── 📁 <b>pages/</b> — Страницы (TaskPage)  
+│ ├── 📄 <b>App.js</b> — Маршрутизация и структура  
+│ ├── 📄 <b>index.js</b> — Точка входа с HashRouter  
+│ └── 📄 <b>styles.css</b> — Основные стили  
+├── 📁 <b>brand/</b> — Обложка и бренд-ресурсы проекта  
+├── 📁 <b>screenshots/</b> — Скриншоты и визуалы  
+├── ⚙️ <b>.gitignore</b> — Исключённые из репозитория файлы  
+├── 📦 <b>package.json</b> — Зависимости и скрипты npm  
+└── 📘 <b>README.md</b> — Документация проекта
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Возможности
 
-### Making a Progressive Web App
+- Добавление новых задач в колонку **Backlog**
+- Перемещение между этапами: _Ready → In Progress → Finished_
+- Подсчёт активных и завершённых задач
+- Автоматическое сохранение данных в `localStorage`
+- Кнопка **Reset Board** для сброса состояния
+- Чистая структура и понятная логика
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🧩 Установка и запуск
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/Olegmbq/kanban-board.git
+npm install
+npm start
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🌐 Деплой
 
-### `npm run build` fails to minify
+Приложение развёрнуто через GitHub Pages
+и доступно по адресу:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 https://olegmbq.github.io/kanban-board/
+
+---
+
+🎨 Авторы
+
+---
+
+## ❤️ Created with Love
+
+<p align="center">
+  <img src="./brand/logo_neon_holo.png" width="120" alt="Oleg & Neuro Code Studio Logo"/><br><br>
+
+<h3 align="center">✨ Oleg & Neuro Code Studio</h3> <p align="center"> <i>"Создано в неоне и гармонии"</i><br> Разработано с любовью, логикой и вниманием к деталям 💙 </p>
+<p align="center"> © 2025 <b>Oleg & Neuro Code Studio</b><br> <i>Твоя идея. Наш код. Единая гармония.</i><br> <sub>🪄 Crafted with care & creativity</sub> </p>
+
+---
+
+<p align="center" style="font-weight:bold; color:#ff00cc;">
+✨ We don’t just code — we illuminate the world together ✨
+</p>

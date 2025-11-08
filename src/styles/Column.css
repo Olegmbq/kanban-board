@@ -1,0 +1,76 @@
+/* 🎨 Анимация появления */
+.card-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.card-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card-exit {
+  opacity: 1;
+}
+.card-exit-active {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* 💡 Внешний вид карточек */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧩 Карточка задачи */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #222; /* ← постоянный цвет текста */
+  opacity: 1; /* ← всегда видимая */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(127, 0, 255, 0.4); /* лёгкий фиолетовый неон */
+  background-color: #ffffff; /* чуть ярче фон при наведении */
+}
+
+/* 🔘 Кнопки */
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+  color: white;
+  background: linear-gradient(135deg, #7f00ff, #00ffff);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #7f00ff, 0 0 20px #00ffff;
+  transform: scale(1.05);
+}
+
+input,
+select {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 10px;
+}
