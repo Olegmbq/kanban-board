@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { dataMock } from "./data/dataMock";
+import Board from "./components/Board/Board";
+import TaskPage from "./pages/TaskPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Board data={dataMock} />} />
+      <Route path="/tasks/:id" element={<TaskPage />} />
+    </Routes>
   );
 }
 
