@@ -38,9 +38,9 @@ const Board = ({ data }) => {
 
   // 🔁 Сброс до исходного макета
   const handleReset = () => {
-    if (window.confirm("Сбросить доску к исходному состоянию?")) {
-      localStorage.removeItem(STORAGE_KEY);
-      setColumns(data); // восстановим из dataMock без перезагрузки
+    if (window.confirm("Reset board to initial state?")) {
+      localStorage.clear();
+      window.location.reload(); // восстановим из dataMock без перезагрузки
     }
   };
 
